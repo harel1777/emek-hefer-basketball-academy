@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>עמק חפר - מועדון ואקדמיית הכדורסל</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('basketball-bg.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 50px 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            margin: 20px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+        .logo {
+            width: 120px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .map {
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images.jpeg" alt="לוגו אקדמיית הכדורסל עמק חפר" class="logo">
+            <h1>אקדמיית הכדורסל עמק חפר</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">בית</a></li>
+                    <li><a href="#about">אודות</a></li>
+                    <li><a href="#gallery">גלריה</a></li>
+                    <li><a href="#contact">צור קשר</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>ברוכים הבאים לאקדמיית הכדורסל עמק חפר</h2>
+            <p>המקום שבו שחקנים צעירים מתפתחים למצוינות!</p>
+        </div>
+    </section>
+    
+    <section id="about" class="content">
+        <div class="container">
+            <h2>אודות</h2>
+            <p>אקדמיית הכדורסל עמק חפר מצמיחה דורות של שחקנים ומשקיעה בפיתוח אישי ומקצועי.</p>
+        </div>
+    </section>
+    
+    <section id="gallery" class="content">
+        <div class="container">
+            <h2>גלריה</h2>
+            <div class="gallery">
+                <img src="gallery1.jpg" alt="תמונה 1">
+                <img src="gallery2.jpg" alt="תמונה 2">
+                <img src="gallery3.jpg" alt="תמונה 3">
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="content">
+        <div class="container">
+            <h2>צור קשר</h2>
+            <div class="contact-form">
+                <form>
+                    <input type="text" name="name" placeholder="שם מלא" required>
+                    <input type="email" name="email" placeholder="אימייל" required>
+                    <textarea name="message" rows="5" placeholder="ההודעה שלך" required></textarea>
+                    <button type="submit">שלח הודעה</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content">
+        <div class="container">
+            <h2>מיקום</h2>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.689214610878!2d34.91964!3d32.4016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d414caaaaaaab%3A0x1234567890abcdef!2sEmek%20Hefer!5e0!3m2!1sen!2sil!4v1648374912345" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 כל הזכויות שמורות לאקדמיית הכדורסל עמק חפר</p>
+        </div>
+    </footer>
+</body>
+</html>
